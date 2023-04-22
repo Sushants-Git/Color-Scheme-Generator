@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="./logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+
+
+    <title>Color Scheme Generator</title>
+</head>
+
+<body>
+    <header>
+        <div class="main-container">
+            <input type="color">
+            <select name="scheme" id="color-picker">
+                <option value="monochrome">Monochrome</option>
+                <option value="monochrome-dark">Monochrome-dark</option>
+                <option value="monochrome-light">Monochrome-light</option>
+                <option value="analogic">Analogic</option>
+                <option value="complement">Complement</option>
+                <option value="analogic-complement">Analogic-complement</option>
+                <option value="triad">Triad</option>
+            </select>
+            <button>Get Color scheme</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="generated-colors">
+            <div id="color-one"></div>
+            <p id="color-one-name">Color 1</p>
+            <div id="color-two"></div>
+            <p id="color-two-name">Color 1</p>
+            <div id="color-three"></div>
+            <p id="color-three-name">Color 1</p>
+            <div id="color-four"></div>
+            <p id="color-four-name">Color 1</p>
+            <div id="color-five"></div>
+            <p id="color-five-name">Color 1</p>
+            <div id="color-six"></div>
+            <p id="color-six-name">Color 1</p>
+        </div>
+    </main>
+
+    <script src="index.js" type="module"></script>
+</body>
+
+</html>

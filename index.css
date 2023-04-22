@@ -1,0 +1,167 @@
+body{
+    margin: 0;
+}
+
+
+*{
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+header{
+    background-color: #1F2937;
+}
+
+.main-container{
+    width: 650px;
+    margin: auto;
+}
+
+.main-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+input[type=color]{
+    width: 61px;
+    height: 43px;
+    border: none;
+}
+
+select{
+    width: 360px;
+    height: 43px;
+    border-radius: 6px;
+    background-color: #1F2937;
+    border: 1px solid #D1D5DB;
+    color: #D5D4D8;
+    font-size: 16px;
+    padding-left: 20px;
+    font-weight: bolder;
+}
+option{
+    background-color: #1F2937;
+}
+
+button{
+    background-color: #3D4B60;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 0.8rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+
+/*---------------------Main--------------------*/
+main{
+    height: 100%;
+}
+
+.generated-colors{
+    display: grid;
+    grid-template-rows: 80vh minmax(7.8vh,10vh);
+    grid-template-areas: "color-one color-two color-three color-four color-five color-six"
+    "color-one-name color-two-name color-three-name color-four-name color-five-name color-six-name";
+    text-align: center;
+}
+
+p{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bolder;
+
+}
+
+#color-one-name{
+    grid-area: color-one-name;
+    background-color: #1F2937;
+}
+
+#color-two-name{
+    grid-area: color-two-name;
+    background-color: #1F2937;
+}
+
+#color-three-name{
+    grid-area: color-three-name;
+    background-color: #1F2937;
+}
+
+#color-four-name{
+    grid-area: color-four-name;
+    background-color: #1F2937;
+}
+
+
+#color-five-name{
+    grid-area: color-five-name;
+    background-color: #1F2937;
+}
+
+#color-six-name{
+    grid-area: color-six-name;
+    background-color: #1F2937;
+}
+
+#color-one{
+    grid-area: color-one;
+}
+
+#color-two{
+    grid-area: color-two;
+}
+
+#color-three{
+    grid-area: color-three;
+}
+
+#color-four{
+    grid-area: color-four;
+}
+
+#color-five{
+    grid-area: color-five;
+}
+
+#color-six{
+    grid-area: color-six;
+}
+
+@media (max-width: 550px){
+    select{
+        width: 200px;
+    }
+
+    .main-container{
+        width: auto;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 400px){
+    select{
+        width: 150px;
+    }
+
+    .main-container{
+        width: auto;
+        justify-content: space-around;
+    }
+
+    button{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    p{
+        font-size: 11px;
+    }
+}
